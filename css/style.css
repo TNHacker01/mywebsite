@@ -438,14 +438,3 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
-
-form button.disabled {
-    opacity: 0.3;
-}
-
-.error {
-    color: crimson;
-    margin-top: 20px;
-    background-color: darkseagreen;
-    display: none;
-}

@@ -28,7 +28,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <script src="contact-form-script.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -593,84 +592,88 @@
                             </div>
                             <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
 
-                                <!-- Start Contact Form -->
-                                <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
-                                    <div class="form-group">
-                                        <div class="controls">
-                                            <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
-                                            <div class="help-block with-errors"></div>
+                                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <form method="post" action="https://formsubmit.co/garenarussia20@gmail.com">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                                    <label for="name">Your Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                                    <label for="email">Your Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+                                                    <label for="subject">Subject</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                    <label for="message">Message</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="controls">
-                                            <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="controls">
-                                            <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="controls">
-                                            <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-
-                                </form>
-                                <!-- End Contact Form -->
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Contact End -->
-
-                <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=C94%20Monastir+(Zaramidin,Monastir,Tunisia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
-
-                <!-- Copyright Start -->
-                <div class="container-fluid bg-dark text-white py-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a class="border-bottom text-secondary" href="#">Ftou7 Devs</a>, All Rights Reserved.
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By <a class="border-bottom text-secondary" href="#">Med Fateh Ismail</a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Contact End -->
                 </div>
             </div>
-            <!-- Copyright End -->
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=C94%20Monastir+(Zaramidin,Monastir,Tunisia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 
 
-            <!-- Back to Top -->
-            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">Ftou7 Devs</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom text-secondary" href="#">Med Fateh Ismail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Copyright End -->
 
 
-            <!-- JavaScript Libraries -->
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="lib/wow/wow.min.js"></script>
-            <script src="lib/easing/easing.min.js"></script>
-            <script src="lib/waypoints/waypoints.min.js"></script>
-            <script src="lib/typed/typed.min.js"></script>
-            <script src="lib/counterup/counterup.min.js"></script>
-            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-            <script src="lib/isotope/isotope.pkgd.min.js"></script>
-            <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-            <!-- Template Javascript -->
-            <script src="js/main.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
