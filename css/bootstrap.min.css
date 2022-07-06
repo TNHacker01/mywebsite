@@ -533,8 +533,8 @@ progress {
 
 .display-5 {
     font-size: calc(1.425rem + 2.1vw);
-    font-weight: 700;
-    line-height: 1.2
+    font-weight: 650;
+    line-height: 1.15
 }
 
 @media (min-width: 1200px) {
@@ -7981,7 +7981,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secondary {
-    background-color: #FFC448 !important
+    background-color: #471aae !important
 }
 
 .bg-success {
