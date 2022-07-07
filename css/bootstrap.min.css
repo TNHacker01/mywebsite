@@ -600,7 +600,7 @@ progress {
 
 .img-fluid {
     max-width: 100%;
-    height: auto
+    height: 100%
 }
 
 .img-thumbnail {
@@ -7925,7 +7925,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-    color: #FFC448 !important
+    color: #baa6fe !important
 }
 
 .text-success {

@@ -28,6 +28,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        iframe {
+            position: relative;
+            margin-left: 256px;
+            width: 840px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -79,7 +88,16 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Graphic Designer, Web Designer, Front End Developer, Python Developer, UI Designer</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="C:\Programming Career\MY Portfolio Website\proman-1.0.0" download="personal-portfolio-html-template.jpg" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="no-script.html" id="btnDownload" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+
+                        <script>
+                            $(document).ready(function() {
+                                $('#btnDownload').click(function(e) {
+                                    e.preventDefault();
+                                    window.location.href = "resume.pdf"
+                                })
+                            });
+                        </script>
                         <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/rG934tjHLuY" data-bs-target="#videoModal">
                             <span></span>
                         </button>
@@ -139,7 +157,7 @@
                             <img class="img-fluid rounded" src="img/ab1.jpg" alt="">
                         </div>
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/ab3.jpg" alt="">
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
@@ -373,63 +391,57 @@
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                         <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3" data-filter=".first">Best Designs</li>
+                        <li class="mx-3" data-filter=".second">Other Designs</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <img class="img-fluid" src="img/pr1.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <img class="img-fluid" src="img/pr2.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr2.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <img class="img-fluid" src="img/pr3.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr3.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-4.jpg" alt="">
+                        <img class="img-fluid" src="img/pr4.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr4.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-5.jpg" alt="">
+                        <img class="img-fluid" src="img/pr5.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr5.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-6.jpg" alt="">
+                        <img class="img-fluid" src="img/pr6.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/pr6.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
@@ -502,8 +514,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-3 d-none d-lg-block">
                                 <div class="testimonial-left h-100">
-                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/test1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/test2.jpg" alt="">
                                     <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                                 </div>
                             </div>
@@ -511,27 +523,27 @@
                                 <div class="owl-carousel testimonial-carousel">
                                     <div class="testimonial-item text-center">
                                         <div class="position-relative mb-5">
-                                            <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+                                            <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/test1.jpg" alt="">
                                             <div class="testimonial-icon">
                                                 <i class="fa fa-quote-left text-primary"></i>
                                             </div>
                                         </div>
-                                        <p class="fs-5 fst-italic">Great Work From Med Fateh.I appreciate it !</p>
+                                        <p class="fs-5 fst-italic">Great work,thank you for your high quality designs!</p>
                                         <hr class="w-25 mx-auto">
-                                        <h5>Client Name</h5>
-                                        <span>Profession</span>
+                                        <h5>ISET Sfax</h5>
+                                        <span></span>
                                     </div>
                                     <div class="testimonial-item text-center">
                                         <div class="position-relative mb-5">
-                                            <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+                                            <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/test2.jpg" alt="">
                                             <div class="testimonial-icon">
                                                 <i class="fa fa-quote-left text-primary"></i>
                                             </div>
                                         </div>
-                                        <p class="fs-5 fst-italic">Great Work From Med Fateh.I appreciate it !</p>
+                                        <p class="fs-5 fst-italic">Just Wow,carry on Fateh,you have a brillant designing future </p>
                                         <hr class="w-25 mx-auto">
-                                        <h5>Client Name</h5>
-                                        <span>Profession</span>
+                                        <h5>LPM Youth Club</h5>
+                                        <span></span>
                                     </div>
                                     <div class="testimonial-item text-center">
                                         <div class="position-relative mb-5">
@@ -542,15 +554,15 @@
                                         </div>
                                         <p class="fs-5 fst-italic">Great Work From Med Fateh.I appreciate it !</p>
                                         <hr class="w-25 mx-auto">
-                                        <h5>Client Name</h5>
-                                        <span>Profession</span>
+                                        <h5>Hamza</h5>
+                                        <span>App Designer</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 d-none d-lg-block">
                                 <div class="testimonial-right h-100">
-                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/test1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/test2.jpg" alt="">
                                     <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                                 </div>
                             </div>
