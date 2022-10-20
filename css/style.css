@@ -1,8 +1,10 @@
 :root {
-    --primary: #6244C5;
+    --primary: #447cc5;
     --secondary: #FFC448;
     --light: #FAFAFB;
     --dark: #12141D;
+    --bs-cyan: #0dcaf0;
+    --bs-teal: #2cdbd3;
 }
 
 .back-to-top {
@@ -127,7 +129,7 @@
     border: none;
     outline: none !important;
     padding: 18px 20px 20px 28px;
-    background: var(--primary);
+    background: var(--bs-cyan);
 }
 
 .btn-play:before {
@@ -140,7 +142,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background: var(--primary);
+    background: var(--bs-cyan);
     border-radius: 100%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -167,7 +169,7 @@
     width: 0;
     height: 0;
     left: -1px;
-    border-left: 16px solid var(--primary);
+    border-left: 16px solid var(--bs-teal);
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
 }
@@ -288,7 +290,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 68, 197, .9);
+    background: rgba(68, 156, 197, 0.747);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -416,7 +418,7 @@
     width: 30px;
     height: 30px;
     background: #FFFFFF;
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--bs-cyan);
     border-radius: 30px;
     transition: .5s;
 }
@@ -429,10 +431,10 @@
     top: 5px;
     left: 5px;
     border-radius: 16px;
-    background: var(--secondary);
+    background: var(--bs-cyan);
     transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active::after {
-    background: var(--primary);
+    background: var(--bs-teal);
 }

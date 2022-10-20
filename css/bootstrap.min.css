@@ -501,9 +501,26 @@ progress {
 }
 
 .display-3 {
-    font-size: calc(1.525rem + 3.3vw);
+    font-size: calc(1.550rem + 3.3vw);
     font-weight: 700;
-    line-height: 1.2
+    line-height: 1.2;
+    background-image: linear-gradient( -225deg, #0f47ff 0%, #00e1ff 29%, #4c81f3 67%, #292ce6 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: rgb(16, 34, 46);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2.5s linear infinite;
+    display: inline-block;
+    font-family: Andale Mono, monospace;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -592,6 +609,11 @@ progress {
 }
 
 .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid1 {
     max-width: 100%;
     height: auto;
 }
@@ -2845,14 +2867,14 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #6244C5;
-    border-color: #6244C5
+    background-color: #4498c5;
+    border-color: #4465c5
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #533aa7;
-    border-color: #4e369e
+    background-color: #1a6394;
+    border-color: #364e9e
 }
 
 .btn-check:focus+.btn-primary,
@@ -4052,7 +4074,7 @@ fieldset:disabled .btn {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: #6244C5;
+    color: #4471c5;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
 }
 
@@ -4064,7 +4086,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #4e369e
+    color: #36679e
 }
 
 .nav-link.disabled {
@@ -4119,7 +4141,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #6244C5
+    background-color: #4471c5
 }
 
 .nav-fill>.nav-link,
@@ -6937,7 +6959,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #6244C5 !important
+    border-color: #0d6efd !important
 }
 
 .border-secondary {
@@ -7914,11 +7936,11 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #6244C5 !important
+    color: #129bb6 !important
 }
 
 .text-secondary {
-    color: #baa6fe !important
+    color: #0dcaf0 !important
 }
 
 .text-success {
@@ -7974,7 +7996,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secondary {
-    background-color: #471aae !important
+    background-color: #0dcaf0 !important
 }
 
 .bg-success {
